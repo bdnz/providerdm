@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestAuthProvider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I am a" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDE-iZ-9k8">
+                                <rect key="frame" x="96" y="203" width="222" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="34"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2019-04-23 at 6.33.11 PM" translatesAutoresizingMaskIntoConstraints="NO" id="ygw-dM-rvh">
+                                <rect key="frame" x="87" y="36" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="LUV-N2-obp">
+                                <rect key="frame" x="92.5" y="328.5" width="229" height="239"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Li8-Cd-N1n">
+                                        <rect key="frame" x="4" y="0.0" width="221" height="96"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="70"/>
+                                        <state key="normal" title="Shopper">
+                                            <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ShooperTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yFe-4n-q8p"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="Zeb-zd-nZq">
+                                        <rect key="frame" x="0.0" y="149" width="229" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBE-8e-x3H">
+                                                <rect key="frame" x="0.0" y="0.0" width="229" height="90"/>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="65"/>
+                                                <state key="normal" title="Provider">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="LoginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sBt-te-otw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LUV-N2-obp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dtl-91-ViH"/>
+                            <constraint firstItem="LUV-N2-obp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lCu-ai-PzZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="IamALabel" destination="FDE-iZ-9k8" id="3AR-4i-dho"/>
+                        <outlet property="LogoMods" destination="ygw-dM-rvh" id="GE3-ny-Kmq"/>
+                        <outlet property="ProviderBTNMods" destination="uBE-8e-x3H" id="Oso-iE-0jz"/>
+                        <outlet property="ShopperBTNMods" destination="Li8-Cd-N1n" id="gci-eE-Zdt"/>
+                        <segue destination="2EN-Pu-wES" kind="show" identifier="Maps" id="W61-4V-y3e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UyC-XI-plu">
+            <objects>
+                <viewController id="2EN-Pu-wES" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OD7-5g-sry">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bhZ-Rf-rXl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bhZ-Rf-rXl" firstAttribute="leading" secondItem="kVR-s0-lgj" secondAttribute="leading" id="YnQ-8r-jhM"/>
+                            <constraint firstItem="kVR-s0-lgj" firstAttribute="bottom" secondItem="bhZ-Rf-rXl" secondAttribute="bottom" id="gmC-Hu-Dlg"/>
+                            <constraint firstItem="kVR-s0-lgj" firstAttribute="trailing" secondItem="bhZ-Rf-rXl" secondAttribute="trailing" id="iph-HU-SaY"/>
+                            <constraint firstItem="bhZ-Rf-rXl" firstAttribute="top" secondItem="kVR-s0-lgj" secondAttribute="top" id="lF6-l1-mfX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kVR-s0-lgj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xvq-Qt-k5E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screen Shot 2019-04-23 at 6.33.11 PM" width="848" height="494"/>
+    </resources>
+</document>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>727990448209-6jf92fco4o6i0s1s70t5mgls99rh2u19.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.727990448209-6jf92fco4o6i0s1s70t5mgls99rh2u19</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAXDy_P1NgER6LPDw1qVRs_pjypGJ6CwK0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>727990448209</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Deneme.TestAuthProvider</string>
+	<key>PROJECT_ID</key>
+	<string>testauthprovider-8812b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>testauthprovider-8812b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:727990448209:ios:e7e4b7e61f4e43ba</string>
+	<key>DATABASE_URL</key>
+	<string>https://testauthprovider-8812b.firebaseio.com</string>
+</dict>
+</plist>
