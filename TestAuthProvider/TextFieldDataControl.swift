@@ -7,24 +7,61 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+
 
 class TextFieldDataControl: UIViewController {
+    
+    var refUsers: DatabaseReference!
+    
 
+    @IBOutlet weak var UserName: UITextField!
+    
+    @IBOutlet weak var UserSkill: UITextField!
+    
+    @IBOutlet weak var UserStreet: UITextField!
+    
+    @IBOutlet weak var UserCity: UITextField!
+    
+    @IBOutlet weak var UserState: UITextField!
+    
+    @IBOutlet weak var UserZipCode: UITextField!
+    
+    @IBOutlet weak var UserPhoneNumber: UITextField!
+    
+    @IBAction func EnterDataButton(_ sender: UIButton) {
+        
+        addUser()
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      //  FirebaseApp.configure()
 
-        // Do any additional setup after loading the view.
+        refUsers = Database.database().reference().child("USERS");
+    
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func addUser(){
+        
+        let key = refUsers.childByAutoId().key
+        
+        let user = ["id":key,
+                    "UserName": UserName.text! as String,
+                    "UserSkill": UserSkill.text! as String,
+                    "UserStreet": UserStreet.text! as String,
+                    "UserCity": UserCity.text! as String,
+                    "UserState": UserState.text! as String,
+                    "UserZipCode": UserZipCode.text! as String,
+                    "UserPhoneNumber": UserPhoneNumber.text! as String,]
+        refUsers.child(key!).setValue(user)
+        
     }
-    */
+    
 
 }

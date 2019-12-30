@@ -69,7 +69,6 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate{
         let authUIShopper = FUIAuth.defaultAuthUI()
         guard authUIShopper != nil
             else {return}
-        
 
             
        let loginButton = FBSDKLoginButton()
@@ -92,8 +91,6 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate{
         
             performSegue(withIdentifier: "Maps", sender: self)
         
-       
-
     }
     
     
@@ -132,9 +129,6 @@ extension ViewController: FUIAuthDelegate {
         
         //AuthDataResult?.user.uid
         performSegue(withIdentifier: "Maps", sender: self)
-        
-        
-        
         
     }
     

@@ -7,11 +7,13 @@ target 'TestAuthProvider' do
 
   # Pods for TestAuthProvider
 pod 'Firebase/Core'
+pod 'Firebase/Firestore'
 pod 'FirebaseUI/Auth'
 pod 'FirebaseUI'
 pod 'GoogleSignIn'
 pod 'FBSDKLoginKit'
 pod 'FBSDKCoreKit'
+pod 'Firebase/Database'
 
 
 end
