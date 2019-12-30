@@ -187,6 +187,8 @@ DEPENDENCIES:
   - FBSDKCoreKit
   - FBSDKLoginKit
   - Firebase/Core
+  - Firebase/Database
+  - Firebase/Firestore
   - FirebaseUI
   - FirebaseUI/Auth
   - GoogleSignIn
@@ -250,6 +252,6 @@ SPEC CHECKSUMS:
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
   TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
 
-PODFILE CHECKSUM: 07703fb7a9317827fff715de8bce6084257c1af2
+PODFILE CHECKSUM: f8d7e86106b8bcafa58654635d3934d74d40e425
 
 COCOAPODS: 1.6.1

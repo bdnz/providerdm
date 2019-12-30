@@ -1,30 +1,52 @@
 //
 //  MapKit.swift
-//  TestAuthProvider
 //
-//  Created by Deniz on 6/5/19.
-//  Copyright © 2019 Deniz. All rights reserved.
 //
+//  Created by Deniz on 6/3/19.
+//
+
+/*
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class MapKit: UIViewController {
-
+class MapKit : UIViewController {
+    let locationManager = CLLocationManager()
+  @IBOutlet weak var mapView: MKMapView!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationManager.delegate = (self as CLLocationManagerDelegate)
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+    }
+}
 
-        // Do any additional setup after loading the view.
+extension MapKit : CLLocationManagerDelegate {
+    private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            locationManager.requestLocation()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+            let region = MKCoordinateRegion(center: location.coordinate, span: span)
+            mapView.setRegion(region, animated: true)
+        }
     }
-    */
-
+    
+    private func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("error:: \(error)")
+    }
 }
+
+ 
+ 
+ */

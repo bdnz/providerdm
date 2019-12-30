@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22233DC4233A8C8C0031354E /* TextFieldDataControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22233DC3233A8C8C0031354E /* TextFieldDataControl.swift */; };
+		22C2EA6122A8664E009DAF97 /* MapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2EA6022A8664E009DAF97 /* MapKit.swift */; };
 		22CEF572226E6FA100C86A22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEF571226E6FA100C86A22 /* AppDelegate.swift */; };
 		22CEF574226E6FA100C86A22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEF573226E6FA100C86A22 /* ViewController.swift */; };
 		22CEF577226E6FA100C86A22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CEF575226E6FA100C86A22 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22233DC3233A8C8C0031354E /* TextFieldDataControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDataControl.swift; sourceTree = "<group>"; };
+		22C2EA6022A8664E009DAF97 /* MapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKit.swift; sourceTree = "<group>"; };
 		22CEF56E226E6FA100C86A22 /* TestAuthProvider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAuthProvider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CEF571226E6FA100C86A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22CEF573226E6FA100C86A22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				22CEF571226E6FA100C86A22 /* AppDelegate.swift */,
+				22C2EA6022A8664E009DAF97 /* MapKit.swift */,
+				22233DC3233A8C8C0031354E /* TextFieldDataControl.swift */,
 				22CEF573226E6FA100C86A22 /* ViewController.swift */,
 				22CEF575226E6FA100C86A22 /* Main.storyboard */,
 				22CEF578226E6FA200C86A22 /* Assets.xcassets */,
@@ -280,7 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CEF574226E6FA100C86A22 /* ViewController.swift in Sources */,
+				22233DC4233A8C8C0031354E /* TextFieldDataControl.swift in Sources */,
 				22CEF572226E6FA100C86A22 /* AppDelegate.swift in Sources */,
+				22C2EA6122A8664E009DAF97 /* MapKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
